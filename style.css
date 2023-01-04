@@ -1,0 +1,167 @@
+:root{
+    --main-color: #3cb8d9;
+    --secondary-color: #5710b3 ;
+}
+::placeholder{
+    font-size: 1.1em;
+    text-align: center;
+    color: white;
+    opacity: .8;
+    transition: .3s;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* media query start*/
+@media (min-width: 576px){
+    .container{
+        width: 540px;
+
+    }
+    
+}
+@media (min-width: 768px){
+    .container{
+        width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+}
+/* media query end */
+
+/* login start here */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    background-color: white;
+    width: 300px;
+    max-width: 100%;
+    /* height: 300px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px 2px #eee;
+}
+@media (min-width: 768px){
+    .login{
+        width: 500px;
+    }
+}
+.login .box{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -16px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--main-color) var(--main-color) var(--main-color);
+    box-shadow: 0px 2px 10px 4px #eee;
+}
+.login .box .icon-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+.login .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.login .form > h3{
+    text-align: center;
+    font-size: 25px;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.login .form  label{
+    text-transform: capitalize;
+    color: gray;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.login .form input {
+    border: none;
+    width: 50%;
+    height: 35px;
+    background-color: var(--main-color);
+    caret-color: white;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    transition: .3s;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+.login .check .chk{
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-25%);
+}
+.login .check .chk label{
+    text-transform: capitalize;
+    color: gray;
+}
+.login .save{
+    border: none;
+    padding: 10px 50px;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+.login .save:hover{
+    background-color: var(--secondary-color);
+}
+.login .info ul{
+    list-style: none;
+}
+.login .info ul li{
+
+}
+.login .info ul li a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* login end here */
